@@ -1,4 +1,4 @@
-name: CI
+name: CI workflow
 
 # Trigger the workflow on push to main or on PR to main
 on:
