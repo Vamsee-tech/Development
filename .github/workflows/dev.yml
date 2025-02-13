@@ -1,4 +1,4 @@
-name: Trigger Repo B Workflow
+name: Trigger Repo dev Workflow
 
 on:
   push:
