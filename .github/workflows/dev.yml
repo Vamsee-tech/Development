@@ -1,4 +1,4 @@
-name: Trigger Repo dev Workflow
+name: Trigger Repo B Workflow
 
 on:
   push:
@@ -6,13 +6,13 @@ on:
       - main  # Adjust this as per your needs
 
 jobs:
-  trigger-repo-dev-workflow:
+  trigger-repo-b-workflow:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Trigger Repo dev Workflow
+      - name: Trigger Repo B Workflow
         uses: peter-evans/repository-dispatch@v1
         with:
-          repository: Vamsee-tech/Development  # Replace with your organization and repo name
+          repository: Vamsee-tech/production  # Replace with your organization and repo name
           token: ${{ secrets.GITHUB_TOKEN }}  # Token to authenticate (GitHub token)
           event-type: trigger-workflow  # Event type that will match the trigger in Repo B
